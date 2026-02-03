@@ -5,3 +5,4 @@ tmp.sql
 .phpunit.result.cache
 envs
 storage/*
+config/*
