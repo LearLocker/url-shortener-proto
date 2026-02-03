@@ -1,0 +1,7 @@
+tmp
+.env
+.idea
+tmp.sql
+.phpunit.result.cache
+envs
+storage/*
