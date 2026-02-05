@@ -1,0 +1,20 @@
+# .mockery.yaml
+all: false
+recursive: false
+filename: "mocks/{{.InterfaceName | camelcase}}.go"
+structname: "Mock{{.InterfaceName}}"   # это иногда называют structname, но чаще mockname
+template: testify
+
+packages:
+  "url-shortener/internal/http-server/handlers/url/save":
+    config:
+      all: false
+      recursive: false
+    interfaces:
+      URLSaver: {}
+  "url-shortener/internal/http-server/handlers/url/redirect":
+    config:
+      all: false
+      recursive: false
+    interfaces:
+      URLGetter: { }
